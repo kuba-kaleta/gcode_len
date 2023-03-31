@@ -7,7 +7,7 @@ class ReadFile:
     @staticmethod
     def read():
         try:
-            file = open("katownik-01.ncp", 'r')
+            file = open("/var/www/apps/ciecie/gcode_len/katownik-01.ncp", 'r')
 
             topology_list = file.readlines()
             for i in topology_list:
@@ -18,4 +18,5 @@ class ReadFile:
                     Gcode.Gcode.gcode_parse(i)
             file.close()
         except FileNotFoundError as e:
-            print(f"FileNotFoundError successfully handled\n"f"{e}")
+            print(f"FileNotFoundError successfully handled\n"
+                  f"{e}")
