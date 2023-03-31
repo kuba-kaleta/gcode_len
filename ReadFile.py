@@ -7,7 +7,7 @@ class ReadFile:
     @staticmethod
     def read():
         try:
-            file = open("D:\\jakub.kaleta\\isys\\dlugosc_ciecia\\katownik-01.ncp", 'r')
+            file = open("katownik-01.ncp", 'r')
 
             topology_list = file.readlines()
             for i in topology_list:
